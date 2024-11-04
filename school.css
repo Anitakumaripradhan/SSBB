@@ -51,6 +51,7 @@ Header .Header{
     background: linear-gradient(70deg, lightblue, #FF3E96, skyblue, #FF3E96);
     background-clip: text;
     padding-left: 0px;
+    display: flex;
 }
 
 .Header .Brand h1 span{
