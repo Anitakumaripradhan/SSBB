@@ -8,6 +8,7 @@ html{
     background-color:#111111;
     font-family: salsa;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -50,8 +51,7 @@ Header .Header{
     border-radius: 5px 10px 5px 10px;
     background: linear-gradient(70deg, lightblue, #FF3E96, skyblue, #FF3E96);
     background-clip: text;
-    padding-left: 0px;
-    display: flex;
+    display:inline-block;
 }
 
 .Header .Brand h1 span{
@@ -157,6 +157,7 @@ Header .Header{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    text-align: center;
 }
 
 #Academics .Academic-Top h1{
@@ -197,11 +198,15 @@ Header .Header{
     margin: 10px;
     overflow: hidden;
     opacity: 80%;
+    height: 8cm;
+    width: 5cm;
 }
 
 #Academics .Academic-Item:hover{
-    font-size: larger;
+    height: 9cm;
+    width: 6cm;
     opacity: 100%;
+    font-size: larger;
 }
 
 #Academics .Academic-Item::after{
@@ -223,7 +228,6 @@ Header .Header{
 }
 
 #Academics .Academic-Item p{
-    font-size: 1.2rem;
     text-align: left;
 }
 
@@ -233,3 +237,121 @@ Header .Header{
     width: 80px;
     margin-bottom: 10px;
 }
+
+#Glory{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    margin: 0px auto;
+    gap: 20px;
+}
+
+#Glory .Glory-left{
+    height: 360px;
+    width: 250px; 
+}
+
+#Glory .Glory-left .Glory-Image{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#Glory .Glory-left .Glory-Image::after{
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 98%;
+    z-index: -1;
+    border: 7px solid #FF3E96;
+}
+
+#Glory .Glory-left .Glory-Image img{
+    height: 360px;
+    width: 250px;
+    border:10px double skyblue;
+}
+
+#Glory .Glory-right{
+    width: 50%;
+}
+
+#Glory .Glory-right h1{
+    color: transparent;
+    font-size: 4rem;
+    background:linear-gradient(70deg, lightblue, #FF3E96, skyblue, #FF3E96) ;
+    background-clip: text;
+}
+
+#Glory .Glory-right h2{
+    color: #FF3E96;
+    margin: 5px;
+}
+
+#Glory .Glory-right p{
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+#Glory .Glory-right .CTA{
+    display: inline-block;
+    border: 3px solid white;
+    font-size: 2rem;
+    font-weight: bold;
+    color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    background: linear-gradient(80deg, lightblue, #FF3E96, skyblue, #FF3E96);
+    background-clip: text;
+}
+
+#Glory .Glory-right .CTA:hover{
+    color: white;
+    background: #FF3E96;
+    font-size: 2.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
