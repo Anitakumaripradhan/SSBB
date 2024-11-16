@@ -85,7 +85,7 @@ Header .Header{
 }
 
 #Home {
-    background-image:url(/school.jpg) ;
+    background-image:url(/Webdevelopment/1stProject/school.jpg) ;
     z-index: 1 ;
     position: relative;
     height: 100vh;
@@ -140,4 +140,96 @@ Header .Header{
 
 #Home .button .CTA:active{
     transform: scaleX(90%) scaleY(80%) scaleZ(70%);
+}
+
+#Academics{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 1500px;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 100px 0;
+}
+
+#Academics .Academic-Top{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#Academics .Academic-Top h1{
+    color: transparent;
+    font-size: 4rem;
+    background:linear-gradient(70deg, lightblue, #FF3E96, skyblue, #FF3E96) ;
+    background-clip: text;
+    justify-content: center;
+    align-items: center;
+}
+
+#Academics .Academic-Top p{
+    margin-top: 5px;
+    font-size: 1.7rem;
+}
+
+#Academics .Academic-Bottom{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+}
+
+#Academics .Academic-Item{
+    flex-basis: 20%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 20px;
+    border-radius: 20px 0px 20px 0px;
+    background-color: #FF3E96;
+    position: relative;
+    z-index: 1;
+    margin: 10px;
+    overflow: hidden;
+    opacity: 80%;
+}
+
+#Academics .Academic-Item:hover{
+    font-size: larger;
+    opacity: 100%;
+}
+
+#Academics .Academic-Item::after{
+    content: '';
+    z-index: -1;
+    background:  linear-gradient(60deg, #29232c 0%, #a9014c 50%, #FF3E96 100%);
+    margin: auto;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+}
+
+#Academics .Academic-Item h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#Academics .Academic-Item p{
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+#Academics .Academic-Item .icon{
+    flex: 00 auto;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
 }
