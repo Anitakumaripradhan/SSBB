@@ -85,7 +85,7 @@ Header .Header{
 }
 
 #Home {
-    background-image:url(/Webdevelopment/1stProject/school.jpg) ;
+    background-image:url(/school.jpg) ;
     z-index: 1 ;
     position: relative;
     height: 100vh;
