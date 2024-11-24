@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSBB</title>
-    <link rel="stylesheet" href="/school.css">
+    <link rel="stylesheet" href="/Webdevelopment/1stProject/school.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Webdevelopment/HTML/1st Project/logo.png">
 </head>
 <body>
     <header class="Header">
@@ -21,7 +22,7 @@
                 <ul>
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#Academics">Academics</a></li>
-                    <li><a href="#Glory">Glory</a></li>
+                    <li><a href="#Glory">HM's Talk</a></li>
                     <li><a href="#About">Our Legacy</a></li>
                     <li><a href="#Contact">Contact Us</a></li>
                 </ul>
@@ -74,13 +75,29 @@
 </section>
 <section id="Glory">
     <div class="Glory-left">
-        <div class="Glory-Image"><img src="/HM.jpg" alt="000"></div>
+        <div class="Glory-Image"><img src="/Webdevelopment/1stProject/HM.jpg" alt="000"></div>
     </div>
     <div class="Glory-right">
         <h1 id="section-title">Mr. Haraprasad <br><span>Acharya</span> </h1>
         <h2>Pradhan Acharya, MA, BEd</h2>
         <p>"In this world where technology is evolving, we, all the staffs of Saraswati Sisu Bidya Bhaban, focusing not only in academic Achievements but also in overall growth of a student with updating him/her with modern technology."</p>
         <a href="./Brochure.pdf" class="CTA">Download Brochure</a>
+    </div>
+</section>
+<section id="Contact">
+    <div class="Contact-Top"><h1>Get A Call Back</h1></div>
+    <div class="Contact-Bottom">
+        <form action="/index.html" method="get">
+            <label for="Name"><h2>Name :</h2></label>
+            <input type="text" name="Name" id="name" placeholder="Type Your Name" required> <br><br>
+            <label for="Number"><h2>Number : </h2></label>
+            <input type="number" name="Number" id="Number" pattern="[10] {0-9}" placeholder="Whatshapp Number Is Perferable">
+            <label for="email"><h2>Email :</h2></label>
+            <input type="email" id="email" name="Email"><br><br>
+            <label for="msg"><h2>Your Message:</h2></label>
+            <textarea name="msg" id="msg" placeholder="Your Message"></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
     </div>
 </section>
 </body>
